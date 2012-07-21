@@ -1,0 +1,14 @@
+XTerm*faceName: ProggyTinySZ:pixelsize=10
+
+URxvt.scrollBar: false
+
+URxvt.transparent: true
+URxvt.shading: 35
+
+URxvt.font: xft:ProggyTinyTTSZ:style=Regular:size=12:antialias=false
+URxvt.boldFont: xft:ProggyTinyTTSZ:style=REgular:size=12:antialias=false
+URxvt.letterSpace: 0
+
+URxvt*background:black
+URxvt*foreground:white
+URxvt*color4:#00EAFF

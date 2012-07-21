@@ -1,0 +1,46 @@
+# CTRL+t f = Firefoxxxy nao!
+bind f exec firefox
+
+# CTRL+t x = xombrero(messing around with it, considering switching)
+bind x exec xombrero
+
+# set borders to 0
+set border 0
+
+# make messages appear in middle
+sert bargravity c
+
+# bind M-! to store current frame layout in slot #1, etc. (will add permanent saving at some point I think)
+bind M-exclam exec ratpoison -c "setenv fs1 `ratpoison -c 'fdump'`"
+bind M-at exec ratpoison -c "setenv fs2 `ratpoison -c 'fdump'`"
+bind M-numbersign exec ratpoison -c "setenv fs3 `ratpoison -c 'fdump'`"
+
+# bind M-1 to restore frame layout in slot #1, etc.
+bind M-1 exec ratpoison -c "frestore `ratpoison -c 'getenv fs1'`"
+bind M-2 exec ratpoison -c "frestore `ratpoison -c 'getenv fs2'`"
+bind M-3 exec ratpoison -c "frestore `ratpoison -c 'getenv fs3'`"
+
+# bind C-Q to quit
+bind C-Q quit
+
+# bind C-q to close "delete" a window
+bind C-q delete
+
+# use ratmenu, should be helpful
+bind w exec ~/bin/windows
+
+######## VIM-like motion keys for window movement ##############
+bind j focusdown
+bind k focusup
+bind h focusleft
+bind l focusright
+bind C-j exchangedown
+bind C-k exchangeup
+bind C-h exchangeleft
+bind C-l exchangeright
+
+######## replacing functions used by those keys ###
+bind a redisplay
+
+# use urxvt as the terminal of choice :D
+bind c exec urxvt

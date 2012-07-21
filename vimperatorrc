@@ -1,0 +1,10 @@
+"3.3 (created: 2011/11/13 17:32:12)
+
+source! /home/tom/.vimperatorrc.local
+
+" vim: set ft=vimperator:
+
+" gets rid of the crap! note that I removed the scrollbar as well
+" through editing of firefox css styles.
+set gui=none
+
