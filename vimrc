@@ -1,5 +1,5 @@
 " Plugins used: snipMate, nerdTree, rails, html5(adds proper formatting for 
-" older html as well), (and probably more soon)
+" older html as well), fugitive, (and probably more soon)
 "
 " This particular vimrc is made by Tom McLeod, though pretty much everything
 " here is borrowed from others configs.
@@ -9,10 +9,10 @@
 " Allows for 256 color mode, required by oceanblack256 colorscheme
 set t_Co=256
 
-" My personal favorite colorscheme as of now... can be found in the vim.org
-" scripts
-"colorscheme xoria256
-colorscheme oceanblack256
+" My personal favorite colorscheme as of now, it can be found at
+" (https://github.com/gregsexton/Muon)
+" mine is slitghtly modified, I may fork it on github.
+colorscheme muon
 
 " 2 space tabstop, because I'm a nut :D
 set tabstop=2
@@ -46,6 +46,29 @@ set lazyredraw
 " Tell me which mode
 set showmode
 
+" Make vertical splits pretty :D
+set fillchars=vert:│  " That is a vertical box-drawing character(UNICODE)
+
+" Set my leader to , instead of default \, which sucks :P
+let mapleader = ","
+
+" ,gs pulls up git status(using fugitive.vim)
+nnoremap <leader>gs :Gstatus<CR><C-W>15+
+
+" ,w saves(faster, and I like to save!
+nnoremap <leader>w :w<CR>
+
+" Make < indent back and then re-highlight
+vnoremap < <gv
+" Same for >
+vnoremap > >gv
+
+" Faster moving from one window to another!
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 " Sets a number of lines from the top and bottom that will be used as a kind
 " of visual buffer while scrolling, I find it less visually jarring than
 " having the cursor at the bottom of the page...
@@ -66,7 +89,3 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
-
-" decided I didn't use/like this in the end, left just in case though
-"autocmd VimEnter * NERDTree
-"autocmd VimEnter * wincmd p

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+rm -f ~/.bash_profile ~/.bashrc ~/.gitignore_global ~/.ratpoisonrc ~/.speedswapper ~/.vimperatorrc ~/.vimrc ~/.Xdefaults ~/.xinitrc ~/.xombrero.conf ~/.Xresources ~/.zlogin ~/.zshrc 
+ln -s dotfiles/bash_profile ~/.bash_profile
+ln -s dotfiles/bashrc ~/.bashrc
+ln -s dotfiles/gitignore_global ~/.gitignore_global
+ln -s dotfiles/ratpoisonrc ~/.ratpoisonrc
+ln -s dotfiles/speedswapper ~/.speedswapper
+ln -s dotfiles/vimperatorrc ~/.vimperatorrc
+ln -s dotfiles/vimrc ~/.vimrc
+ln -s dotfiles/Xdefaults ~/.Xdefaults
+ln -s dotfiles/xinitrc ~/.xinitrc
+ln -s dotfiles/xombrero.conf ~/.xombrero.conf
+ln -s dotfiles/Xresources ~/.Xresources
+ln -s dotfiles/zlogin ~/.zlogin
+ln -s dotfiles/zshrc ~/.zshrc

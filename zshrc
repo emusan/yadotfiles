@@ -51,6 +51,9 @@ bindkey "\e[8~" end-of-line #END(rxvt)
 PATH=$PATH:~/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin:~/.gem/ruby/1.9.1/bin
 export PATH
 
+GOPATH=$GOPATH:~/progs/go
+export GOPATH
+
 DEVKITPRO=/home/tom/devkitPro
 export DEVKITPRO
 
@@ -58,3 +61,7 @@ DEVKITARM=${DEVKITPRO}/devkitARM
 export DEVKITARM
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# exports to get my locale correct, didn't need them before... lol
+export LANG=en_US.UTF-8
+export LC_ALL=$LANG
