@@ -23,6 +23,12 @@ alias ls="ls --color=auto"
 # Faster clear :D
 alias c=clear
 
+# Epic idea stollen from a guy on reddt :D
+alias :e=vim
+
+# Another good idea
+alias :wq=exit
+
 # Get some prompty-stuffs
 autoload -U promptinit
 promptinit
