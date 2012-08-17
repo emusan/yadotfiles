@@ -1,16 +1,16 @@
 #!/bin/bash
 
 rm -f ~/.bash_profile ~/.bashrc ~/.gitignore_global ~/.ratpoisonrc ~/.speedswapper ~/.vimperatorrc ~/.vimrc ~/.Xdefaults ~/.xinitrc ~/.xombrero.conf ~/.Xresources ~/.zlogin ~/.zshrc 
-ln -s dotfiles/bash_profile ~/.bash_profile
-ln -s dotfiles/bashrc ~/.bashrc
-ln -s dotfiles/gitignore_global ~/.gitignore_global
-ln -s dotfiles/ratpoisonrc ~/.ratpoisonrc
-ln -s dotfiles/speedswapper ~/.speedswapper
-ln -s dotfiles/vimperatorrc ~/.vimperatorrc
-ln -s dotfiles/vimrc ~/.vimrc
-ln -s dotfiles/Xdefaults ~/.Xdefaults
-ln -s dotfiles/xinitrc ~/.xinitrc
-ln -s dotfiles/xombrero.conf ~/.xombrero.conf
-ln -s dotfiles/Xresources ~/.Xresources
-ln -s dotfiles/zlogin ~/.zlogin
-ln -s dotfiles/zshrc ~/.zshrc
+ln -s yadotfiles/bash_profile ~/.bash_profile
+ln -s yadotfiles/bashrc ~/.bashrc
+ln -s yadotfiles/gitignore_global ~/.gitignore_global
+ln -s yadotfiles/ratpoisonrc ~/.ratpoisonrc
+ln -s yadotfiles/speedswapper ~/.speedswapper
+ln -s yadotfiles/vimperatorrc ~/.vimperatorrc
+ln -s yadotfiles/vimrc ~/.vimrc
+ln -s yadotfiles/Xdefaults ~/.Xdefaults
+ln -s yadotfiles/xinitrc ~/.xinitrc
+ln -s yadotfiles/xombrero.conf ~/.xombrero.conf
+ln -s yadotfiles/Xresources ~/.Xresources
+ln -s yadotfiles/zlogin ~/.zlogin
+ln -s yadotfiles/zshrc ~/.zshrc
