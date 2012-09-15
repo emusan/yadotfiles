@@ -54,11 +54,12 @@ bindkey "\e[8~" end-of-line #END(rxvt)
 
 # A few exports
 # Add CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin to PATH
-PATH=$PATH:~/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin:~/.gem/ruby/1.9.1/bin
-export PATH
+#PATH=$PATH:~/CodeSourcery/Sourcery_CodeBench_Lite_for_ARM_EABI/bin:~/.gem/ruby/1.9.1/bin
+#export PATH
 
-GOPATH=$GOPATH:~/progs/go
-export GOPATH
+# Add summon arm toolchain to PATH
+PATH=$PATH:~/arm/arm-none-eabi/bin
+export PATH
 
 DEVKITPRO=/home/tom/devkitPro
 export DEVKITPRO
@@ -71,3 +72,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # exports to get my locale correct, didn't need them before... lol
 export LANG=en_US.UTF-8
 export LC_ALL=$LANG
+
+# Contains Go exports, don't want them all in here
+source ~/.gopaths

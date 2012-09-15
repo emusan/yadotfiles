@@ -69,6 +69,10 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Sets a key to the switch command from Switch.vim, I'm still working on using 
+" this plugin well, but once I do I'm sure it'll help a ton with everything :D
+map - :Switch<CR>
+
 " Sets a number of lines from the top and bottom that will be used as a kind
 " of visual buffer while scrolling, I find it less visually jarring than
 " having the cursor at the bottom of the page...
