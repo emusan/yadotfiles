@@ -44,3 +44,11 @@ bind a redisplay
 
 # use urxvt as the terminal of choice :D
 bind c exec urxvt
+
+# Make more windows available to use with quick button presses :D
+bind F10 select 10
+bind F1 select 11
+bind F2 select 12
+bind F3 select 13
+bind F4 select 14
+bind F5 select 15
