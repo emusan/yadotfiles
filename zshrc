@@ -23,6 +23,9 @@ alias ls="ls --color=auto"
 # Faster clear :D
 alias c=clear
 
+# Like vim but faster and keeps it all in one window
+alias v="gvim --remote-silent"
+
 # Epic idea stollen from a guy on reddt :D
 alias :e=vim
 
