@@ -78,4 +78,3 @@ export LC_ALL=$LANG
 
 # Contains Go exports, don't want them all in here
 source ~/.gopaths
-source ~/.zshstream
