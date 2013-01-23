@@ -5,7 +5,7 @@ ln -s yadotfiles/bash_profile ~/.bash_profile
 ln -s yadotfiles/bashrc ~/.bashrc
 ln -s yadotfiles/gitignore_global ~/.gitignore_global
 ln -s yadotfiles/ratpoisonrc ~/.ratpoisonrc
-ln -s yadotfiles/speedswapper ~/.speedswapper
+ln -s yadotfiles/speedswapper2 ~/.speedswapper2
 ln -s yadotfiles/vimperatorrc ~/.vimperatorrc
 ln -s yadotfiles/vimrc ~/.vimrc
 ln -s yadotfiles/Xdefaults ~/.Xdefaults
