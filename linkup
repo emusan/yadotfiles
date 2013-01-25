@@ -1,10 +1,9 @@
 #!/bin/bash
 
-rm -f ~/.bash_profile ~/.bashrc ~/.gitignore_global ~/.ratpoisonrc ~/.speedswapper ~/.vimperatorrc ~/.vimrc ~/.Xdefaults ~/.xinitrc ~/.xombrero.conf ~/.Xresources ~/.zlogin ~/.zshrc ~/.gopaths ~/.zshstream
+rm -f ~/.bash_profile ~/.bashrc ~/.gitignore_global ~/.speedswapper ~/.vimperatorrc ~/.vimrc ~/.Xdefaults ~/.xinitrc ~/.xombrero.conf ~/.Xresources ~/.zlogin ~/.zshrc ~/.gopaths ~/.zshstream
 ln -s yadotfiles/bash_profile ~/.bash_profile
 ln -s yadotfiles/bashrc ~/.bashrc
 ln -s yadotfiles/gitignore_global ~/.gitignore_global
-ln -s yadotfiles/ratpoisonrc ~/.ratpoisonrc
 ln -s yadotfiles/speedswapper2 ~/.speedswapper2
 ln -s yadotfiles/vimperatorrc ~/.vimperatorrc
 ln -s yadotfiles/vimrc ~/.vimrc

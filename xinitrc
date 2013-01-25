@@ -19,5 +19,17 @@ xrdb -merge ~/.Xresources
 nitrogen --set-auto ~/background.png
 
 # start dat poison
-exec /usr/bin/ratpoison
+#exec /usr/bin/ratpoison
 
+unclutter &
+urxvt &
+urxvt &
+urxvt &
+gvim &
+
+while true ; do
+    xsetroot -name "$(acpi -b | awk 'sub(/,/,"") {print $3, $4}')$( date +"    %F %R" )"
+    sleep 1m
+done &
+
+exec /home/tom/progs/dwm/dwm
