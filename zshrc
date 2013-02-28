@@ -30,7 +30,7 @@ alias v="gvim --remote-silent"
 alias :e=vim
 
 # Another good idea
-alias :wq=exit
+alias :q=exit
 
 # Get some prompty-stuffs
 autoload -U promptinit
@@ -78,3 +78,6 @@ export LC_ALL=$LANG
 
 # Contains Go exports, don't want them all in here
 source ~/.gopaths
+
+# Source the to function, neat little bookmarking tool, can find here: https://github.com/resultsreturned/to
+source ~/.to.sh
