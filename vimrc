@@ -5,8 +5,34 @@
 " here is borrowed from others configs.
 "
 " I plan on working on this a lot over time.
-"
-" Allows for 256 color mode, required by oceanblack256 colorscheme
+
+" why be backwards compatable(aka if I wanna vi I'll vi)???
+set nocompatible
+
+" VUNDLE!
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+" let Vundle manage Vundle!
+Bundle 'gmarik/vundle'
+
+" My Bundles:
+" Githubs:
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'AndrewRadev/switch.vim'
+Bundle 'airblade/vim-gitgutter'
+
+" Vim-scripts:
+
+" Get that filetype stuff happening
+filetype on
+filetype plugin on
+filetype indent on
+
+" Allows for 256 color mode, required by some colorschemes
 set t_Co=256
 
 " My personal favorite colorscheme as of now, it can be found at
@@ -28,14 +54,6 @@ set ve=onemore
 set ai
 syntax enable
 set si
-
-" why be backwards compatable(aka if I wanna vi I'll vi)???
-set nocompatible
-
-" Get that filetype stuff happening
-filetype on
-filetype plugin on
-filetype indent on
 
 " lol should be default on
 set hidden
@@ -92,9 +110,3 @@ set incsearch
 " that far off, it's doubtful I'd ever read it anyway. Though I've never come
 " across anything like this yet, it can't hurt.
 set synmaxcol=2048
-
-" Latex stuffs, meow, remove if it messes stuff up
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor = "latex"
-
-set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after

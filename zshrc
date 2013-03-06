@@ -39,6 +39,9 @@ promptinit
 # Add colors!
 autoload -U colors && colors
 
+# Set editor to my fav.
+export EDITOR=vim
+
 # SUPAHPROMPT, one of the few things in these configs made entirely by me(well okay, the idea's 
 # that make it up are from different people I guess XD)!
 PROMPT="%{$fg[blue]%}%n%{$fg[magenta]%}@%{$fg[blue]%}%m %{$fg[green]%}%2~ %{$reset_color%}%# "
