@@ -12,3 +12,4 @@ ln -s yadotfiles/Xresources ~/.Xresources
 ln -s yadotfiles/zlogin ~/.zlogin
 ln -s yadotfiles/zshrc ~/.zshrc
 ln -s yadotfiles/gopaths ~/.gopaths
+ln -s yadotfiles/gvimrc ~/.gvimrc
