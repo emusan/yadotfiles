@@ -21,7 +21,7 @@ nitrogen --set-auto ~/background.png
 # start dat poison
 #exec /usr/bin/ratpoison
 
-unclutter &
+unclutter -noevents &
 urxvt &
 urxvt &
 urxvt &
