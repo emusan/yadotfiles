@@ -1,6 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
-
+/* appearance */
 static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#1c1c1c";
 static const char normbgcolor[]     = "#222222";
@@ -14,7 +14,7 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "dev", "firefox", "3", "4", "5", "6" };
 
 static const Rule rules[] = {
 	/* xprop(1):
