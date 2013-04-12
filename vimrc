@@ -23,7 +23,8 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'AndrewRadev/switch.vim'
-Bundle 'airblade/vim-gitgutter'
+"Bundle 'airblade/vim-gitgutter' " Significantly slows things down for writes
+"and such, really more of a pain then it is worth.
 
 " Vim-scripts:
 
@@ -75,11 +76,6 @@ nnoremap <leader>gs :Gstatus<CR><C-W>15+
 
 " ,w saves(faster, and I like to save!
 nnoremap <leader>w :w<CR>
-
-" Makes it more visible when you go over 80 characters (since I don't like to
-" wrap stuff
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
 
 " Make < indent back and then re-highlight
 vnoremap < <gv
