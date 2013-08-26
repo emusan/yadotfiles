@@ -1,5 +1,5 @@
 # Set up dual displays
-xrandr --output DVI-0 --left-of DisplayPort-0
+#xrandr --output DVI-0 --left-of DisplayPort-0
 
 # make background solid black for now
 xsetroot -solid black
@@ -19,7 +19,7 @@ xcape -e 'Control_L=Escape'
 xrdb -merge ~/.Xresources
 
 # I use nitrogen to set my background, you probably don't need this
-#nitrogen --set-auto ~/background.png
+nitrogen --set-auto ~/background.png
 
 # start dat poison
 #exec /usr/bin/ratpoison
@@ -29,12 +29,12 @@ urxvt &
 urxvt &
 urxvt &
 gvim &
-trayer --expand true --widthtype request --transparent true --alpha 255 --edge bottom --align right &
+#trayer --expand true --widthtype request --transparent true --alpha 255 --edge bottom --align right &
 
 while true ; do
     xsetroot -name "$(acpi -b | awk 'sub(/,/,"") {print $3, $4}')$( date +"    %F %R" )"
     sleep 1m
 done &
 
-exec dwm
+exec /home/tom/progs/dwm/dwm
 #exec fluxbox
