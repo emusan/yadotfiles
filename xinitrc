@@ -9,7 +9,7 @@ xsetroot -solid black
 # uses caps lock anyway??? thanks to the vim wikia for the method of doing
 # this(though they kept caps lock around by putting it on escape, but I see
 # no need for that...)
-xmodmap .speedswapper2
+#xmodmap .speedswapper2
 
 # xcape: swaps Control_L (caps lock as well since I did a swap for that 
 # above) for escape when pressed and for ctrl when held and 
@@ -20,9 +20,6 @@ xrdb -merge ~/.Xresources
 
 # I use nitrogen to set my background, you probably don't need this
 nitrogen --set-auto ~/background.png
-
-# start dat poison
-#exec /usr/bin/ratpoison
 
 unclutter -noevents &
 urxvt &
@@ -36,5 +33,5 @@ while true ; do
     sleep 1m
 done &
 
-exec /home/tom/progs/dwm/dwm
 #exec fluxbox
+exec dwm

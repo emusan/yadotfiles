@@ -22,9 +22,10 @@ Bundle 'gmarik/vundle'
 " Githubs:
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
-Bundle 'AndrewRadev/switch.vim'
-"Bundle 'airblade/vim-gitgutter' " Significantly slows things down for writes
-"and such, really more of a pain then it is worth.
+"Bundle 'AndrewRadev/switch.vim'
+Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
+Bundle 'taglist.vim'
 
 " Vim-scripts:
 
@@ -39,7 +40,7 @@ set t_Co=256
 " My personal favorite colorscheme as of now, it can be found at
 " (https://github.com/gregsexton/Muon)
 " mine is slitghtly modified, I may fork it on github.
-colorscheme muon
+colorscheme random
 
 " 2 space tabstop, because I'm a nut :D
 set tabstop=2
@@ -88,6 +89,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" add tag list toggle thing for easy access
+nnoremap <leader>gt :TlistToggle<CR>
+
 " Sets a key to the switch command from Switch.vim, I'm still working on using 
 " this plugin well, but once I do I'm sure it'll help a ton with everything :D
 map - :Switch<CR>
@@ -106,3 +110,13 @@ set incsearch
 " that far off, it's doubtful I'd ever read it anyway. Though I've never come
 " across anything like this yet, it can't hurt.
 set synmaxcol=2048
+
+" Taglist settings (used to get vhdl ctags support
+let g:tlist_vhdl_settings   = 'vhdl;d:package declarations;b:package bodies;e:entities;a:architecture specifications;t:type declarations;p:processes;f:functions;r:procedures'
+
+" ultisnips settings
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-n>"
+
+let g:UltiSnipsEditSplit="vertical"

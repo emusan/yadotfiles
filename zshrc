@@ -83,4 +83,4 @@ export LC_ALL=$LANG
 source ~/.gopaths
 
 # Source the to function, neat little bookmarking tool, can find here: https://github.com/resultsreturned/to
-source ~/.to.sh
+#source ~/.to.sh
