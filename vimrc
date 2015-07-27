@@ -13,21 +13,31 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " My Bundles:
+" Non-Githubs:
+Plugin 'octave.vim'
+Plugin 'VHDL-indent'
+Plugin 'verilog_systemverilog.vim'
+Plugin 'Align.vim'
 " Githubs:
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
+Plugin 'tpope/vim-fugitive'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'emusan/mirodark'
+"Bundle 'tpope/vim-rails'
 "Bundle 'AndrewRadev/switch.vim'
-Bundle 'SirVer/ultisnips'
-Bundle 'honza/vim-snippets'
-Bundle 'taglist.vim'
 
-" Vim-scripts:
+"call vundle#config#require(g:bundles)
+call vundle#end()
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Get that filetype stuff happening
 filetype on
@@ -40,11 +50,11 @@ set t_Co=256
 " My personal favorite colorscheme as of now, it can be found at
 " (https://github.com/gregsexton/Muon)
 " mine is slitghtly modified, I may fork it on github.
-colorscheme random
+colorscheme mirodark
 
 " 2 space tabstop, because I'm a nut :D
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 
 " who likes wrapped text anyway???
 set nowrap
@@ -67,7 +77,7 @@ set lazyredraw
 set showmode
 
 " Make vertical splits pretty :D
-set fillchars=vert:│  " That is a vertical box-drawing character(UNICODE)
+set fillchars=vert:¦  " That is a vertical box-drawing character(UNICODE)
 
 " Set my leader to , instead of default \, which sucks :P
 let mapleader = ","
@@ -89,9 +99,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" add tag list toggle thing for easy access
-nnoremap <leader>gt :TlistToggle<CR>
-
 " Sets a key to the switch command from Switch.vim, I'm still working on using 
 " this plugin well, but once I do I'm sure it'll help a ton with everything :D
 map - :Switch<CR>
@@ -111,12 +118,14 @@ set incsearch
 " across anything like this yet, it can't hurt.
 set synmaxcol=2048
 
-" Taglist settings (used to get vhdl ctags support
-let g:tlist_vhdl_settings   = 'vhdl;d:package declarations;b:package bodies;e:entities;a:architecture specifications;t:type declarations;p:processes;f:functions;r:procedures'
+set guioptions=none
 
-" ultisnips settings
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-n>"
+set guifont=ProggyTinyTTSZ:h12:cANSI
 
-let g:UltiSnipsEditSplit="vertical"
+" Didn't need this before, but now in windows I do for some reason
+set backspace=2
+
+" Want relative number with the current line number as well, allows for easier
+" use of motions while also getting an idea of where in the file you are.
+set number
+set relativenumber
