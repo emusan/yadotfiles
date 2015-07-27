@@ -22,6 +22,7 @@ Plugin 'gmarik/vundle'
 " Non-Githubs:
 Plugin 'octave.vim'
 Plugin 'VHDL-indent'
+Plugin 'Smart-Tabs'
 Plugin 'verilog_systemverilog.vim'
 Plugin 'Align.vim'
 " Githubs:
@@ -87,6 +88,9 @@ nnoremap <leader>gs :Gstatus<CR><C-W>15+
 
 " ,w saves(faster, and I like to save!
 nnoremap <leader>w :w<CR>
+
+" ,l changes whether hidden characters can be viewed
+nmap <leader>l :set list!<CR>
 
 " Make < indent back and then re-highlight
 vnoremap < <gv
