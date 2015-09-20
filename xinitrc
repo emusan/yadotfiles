@@ -29,7 +29,7 @@ gvim &
 #trayer --expand true --widthtype request --transparent true --alpha 255 --edge bottom --align right &
 
 while true ; do
-    xsetroot -name "$(acpi -b | awk 'sub(/,/,"") {print $3, $4}')$( date +"    %F %R" )"
+    xsetroot -name "$( date +"    %F %R" )"
     sleep 1m
 done &
 

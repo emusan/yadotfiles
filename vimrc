@@ -12,8 +12,8 @@ set nocompatible
 " VUNDLE!
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
-call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#rc()
 
 " let Vundle manage Vundle!
 Plugin 'gmarik/vundle'
@@ -24,7 +24,7 @@ Plugin 'octave.vim'
 Plugin 'VHDL-indent'
 Plugin 'Smart-Tabs'
 Plugin 'verilog_systemverilog.vim'
-Plugin 'Align.vim'
+"Plugin 'Align.vim'
 " Githubs:
 Plugin 'tpope/vim-fugitive'
 Plugin 'SirVer/ultisnips'
